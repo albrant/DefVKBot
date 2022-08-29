@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Product, Section
 from django.utils.safestring import mark_safe
+from .models import Product, Section
 
 
 @admin.register(Product)
@@ -10,7 +10,7 @@ class ProductAdmin(admin.ModelAdmin):
     readonly_fields = ('preview',)
     list_filter = ('section',)
     fields = ('name', 'description', 'section',
-              'image', 'price', 'quantity', 'preview')
+              'image', 'preview', 'price', 'quantity')
 
     def preview(self, obj):
         """функция, действующая как вычислимое поле записи:
