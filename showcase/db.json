@@ -1,0 +1,130 @@
+[
+{
+  "model": "backend.section",
+  "pk": 1,
+  "fields": {
+    "name": "Выпечка",
+    "description": "Всякие печёные вкусняшки"
+  }
+},
+{
+  "model": "backend.section",
+  "pk": 2,
+  "fields": {
+    "name": "Торты и пирожные",
+    "description": "Торты и пирожные"
+  }
+},
+{
+  "model": "backend.section",
+  "pk": 3,
+  "fields": {
+    "name": "Полуфабрикаты",
+    "description": "То, что требует разогрева"
+  }
+},
+{
+  "model": "backend.section",
+  "pk": 5,
+  "fields": {
+    "name": "Разное",
+    "description": "Сюда должны попасть товары из других категорий"
+  }
+},
+{
+  "model": "backend.product",
+  "pk": 1,
+  "fields": {
+    "name": "Наполеон",
+    "description": "Очень вкусный торт Наполеон",
+    "section": 2,
+    "image": "products/images/napoleon_fk79biw.jpg",
+    "price": 800.0,
+    "quantity": 2
+  }
+},
+{
+  "model": "backend.product",
+  "pk": 2,
+  "fields": {
+    "name": "Чизкейк классический",
+    "description": "Снежно-белый вкусный чизкейк",
+    "section": 2,
+    "image": "products/images/cheescace_classic_urVdmBx.jpg",
+    "price": 200.0,
+    "quantity": 3
+  }
+},
+{
+  "model": "backend.product",
+  "pk": 3,
+  "fields": {
+    "name": "Чизкейк клубничный",
+    "description": "Красного цвета, клубничного вкуса. Чизкейк, который тает на губах",
+    "section": 2,
+    "image": "products/images/cheescace_klubnika_0mbeExA.jpg",
+    "price": 250.0,
+    "quantity": 1
+  }
+},
+{
+  "model": "backend.product",
+  "pk": 4,
+  "fields": {
+    "name": "Пельмени",
+    "description": "Пельмени со смешанным фаршем",
+    "section": 3,
+    "image": "products/images/pelmeni_A4kMmDD.jpg",
+    "price": 300.0,
+    "quantity": 6
+  }
+},
+{
+  "model": "backend.product",
+  "pk": 5,
+  "fields": {
+    "name": "Блинчики с творогом",
+    "description": "Блины с творогом. Осталось только подогреть",
+    "section": 3,
+    "image": "products/images/bliny-s-tvorogom_DPc9c5R.jpg",
+    "price": 120.0,
+    "quantity": 8
+  }
+},
+{
+  "model": "backend.product",
+  "pk": 6,
+  "fields": {
+    "name": "Пирожки с мясом",
+    "description": "Пирожки с мясом",
+    "section": 1,
+    "image": "products/images/pirozki_s_myasom_hK4Q0aR.jpg",
+    "price": 100.0,
+    "quantity": 16
+  }
+},
+{
+  "model": "backend.product",
+  "pk": 7,
+  "fields": {
+    "name": "Тесто",
+    "description": "Обычное тесто на закваске",
+    "section": 5,
+    "image": "products/images/testo_0um4pwn.jpg",
+    "price": 70.0,
+    "quantity": 100
+  }
+},
+{
+  "model": "backend.product",
+  "pk": 8,
+  "fields": {
+    "name": "Дрожжевое тесто",
+    "description": "Тесто слоёное дрожжевое для выпечки",
+    "section": 5,
+    "image": "products/images/testo-sloenoe-droz_n9Je6lP.jpg",
+    "price": 100.0,
+    "quantity": 50
+  }
+}
+]

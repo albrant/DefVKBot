@@ -1,11 +1,11 @@
 import math
-from random import randint
 from typing import Any
 
 import vk_api.vk_api
 from vk_api import VkUpload
 from vk_api.bot_longpoll import VkBotEventType, VkBotLongPoll
 from vk_api.keyboard import VkKeyboard
+from vk_api.utils import get_random_id
 
 from backend.models import Product, Section
 from setupDjangoORM import KEYBOARD_ROWS, MEDIA_ROOT
@@ -32,7 +32,7 @@ class BotServer:
         post = {
             'user_id': user_id,
             'message': message,
-            'random_id': randint(10, 2048),
+            'random_id': get_random_id(),
         }
         if attachment is not None:
             post['attachment'] = attachment
